@@ -1,4 +1,4 @@
-// import Navbar from './Components/Navbar';
+import Navbar from './Components/Navbar';
 import Create from "./Components/Create";
 import Read from "./Components/Read";
 import Update from "./Components/Update";
@@ -8,6 +8,7 @@ const App = () => {
   return (
     <div className='App'>
     <BrowserRouter>
+    <Navbar/>
       <Routes>
       <Route exact path='/create' element= {<Create/>}/>
       <Route exact path='/all' element= {<Read/>}/>
